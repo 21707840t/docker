@@ -14,7 +14,7 @@ services:
             MYSQL_USER: test
             MYSQL_PASSWORD: test
 
-    app:
+    frontend:
         image: myapp
         container_name: myapp_c1
         restart: always
@@ -27,3 +27,5 @@ services:
 
 volumes:
   mysqldata:
+networks:
+   mynet1:
